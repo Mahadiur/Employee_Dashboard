@@ -55,12 +55,14 @@
                 </tr>
             </thead>
             <tbody>
+                {% for backdev in Backend_info %}
                 <tr>
-                    <td scope="col"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td scope="col">{{ forloop.counter }}</td>
+                    <td>{{backdev.Full_Name}}</td>
+                    <td>{{backdev.Email}}</td>
+                    <td>{{backdev.Phone_Number}}</td>
                 </tr>
+                {% endfor %}
             </tbody>
         </table>
     </div>
