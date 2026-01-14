@@ -54,7 +54,7 @@ ROOT_URLCONF = 'Dashboard.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['Designing'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
