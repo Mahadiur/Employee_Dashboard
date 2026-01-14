@@ -68,7 +68,7 @@
     </div>
 
     <!-- Online Batch -->
-     <div class="container pt-3 text-white ">
+    <div class="container pt-3 text-white ">
         <h4 class="text-success mx-auto ">Online Batch Mentor </h4>
         <table class="table">
             <thead>
@@ -92,7 +92,30 @@
         </table>
     </div>
 
- 
+    <!-- Editor Team -->
+    <div class="container pt-3 text-white ">
+        <h4 class="text-success mx-auto ">Editor Name</h4>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="row">ID</th>
+                    <th scope="row">Employee Name</th>
+                    <th scope="row">Email</th>
+                    <th scope="row">Phone Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for editor in EditorTeam_info %}
+                <tr>
+                    <td scope="col">{{ forloop.counter }}</td>
+                    <td>{{editor.Full_Name}}</td>
+                    <td>{{editor.Email}}</td>
+                    <td>{{editor.Phone_Number}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 </body>
 
 </html>

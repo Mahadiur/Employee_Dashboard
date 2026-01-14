@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'FrontendDev',
     'BackendDev',
     'OnlineBatchTeam',
+    'Editorteam'
 ]
 
 MIDDLEWARE = [
