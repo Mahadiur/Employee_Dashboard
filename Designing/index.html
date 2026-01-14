@@ -66,6 +66,33 @@
             </tbody>
         </table>
     </div>
+
+    <!-- Online Batch -->
+     <div class="container pt-3 text-white ">
+        <h4 class="text-success mx-auto ">Online Batch Mentor </h4>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="row">ID</th>
+                    <th scope="row">Employee Name</th>
+                    <th scope="row">Email</th>
+                    <th scope="row">Phone Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for onbatch in OnlineBatch_info %}
+                <tr>
+                    <td scope="col">{{ forloop.counter }}</td>
+                    <td>{{onbatch.Full_Name}}</td>
+                    <td>{{onbatch.Email}}</td>
+                    <td>{{onbatch.Phone_Number}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+ 
 </body>
 
 </html>
