@@ -2,5 +2,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('<int:primarykey', views.editorteam_details)
+    path('<int:primarykey>/', views.editorteam_details)
 ]

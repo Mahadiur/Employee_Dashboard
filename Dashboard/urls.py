@@ -19,11 +19,12 @@ from django.urls import path, include
 from . import showcase
 from django.conf import settings
 from django.conf.urls.static import static
+from . import showcase
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', showcase.EmpDashboard),
+    path('', showcase.EmpDashboard, name='index'),
     path('frontendteam/', include('FrontendDev.urls')),
     path('backendteam/', include('BackendDev.urls')),
     path('onlinebatchteam/', include('OnlineBatchTeam.urls')),

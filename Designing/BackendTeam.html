@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Team Employee Details </title>
+</head>
+
+<body class="bg-dark">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{Back_info.Photo.url}}" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Asian It Tech</h5>
+            <p class="card-text">{{Back_info.Full_Name}}</p>
+            <p class="card-text">{{Back_info.Email}}</p>
+            <p class="card-text">{{Back_info.Phone_Number}}</p>
+            <p class="card-text">{{Back_info.Salary}}</p>
+        </div>
+        <a href="{% url 'index'%}" class="btn btn-primary">Back to Home</a>
+
+    </div>
+</body>
+
+</html>
