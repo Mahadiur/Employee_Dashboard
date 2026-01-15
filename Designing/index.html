@@ -33,7 +33,7 @@
                 {% for frontdev in Frontend_info %}
                 <tr>
                     <td scope="col">{{forloop.counter }}</td>
-                    <td>{{frontdev.Full_Name}}</td>
+                    <td><a href="{% url 'frontend' frontdev.id %}">{{frontdev.Full_Name}}</a></td>
                     <td>{{frontdev.Email}}</td>
                     <td>{{frontdev.Phone_Number}}</td>
                 </tr>
@@ -58,7 +58,7 @@
                 {% for backdev in Backend_info %}
                 <tr>
                     <td scope="col">{{ forloop.counter }}</td>
-                    <td>{{backdev.Full_Name}}</td>
+                    <td><a href="{% url 'backend' backdev.id %}">{{backdev.Full_Name}}</a></td>
                     <td>{{backdev.Email}}</td>
                     <td>{{backdev.Phone_Number}}</td>
                 </tr>
@@ -83,7 +83,7 @@
                 {% for onbatch in OnlineBatch_info %}
                 <tr>
                     <td scope="col">{{ forloop.counter }}</td>
-                    <td>{{onbatch.Full_Name}}</td>
+                    <td><a href="{% url 'onlinebatch' onbatch.id %}">{{onbatch.Full_Name}}</a></td>
                     <td>{{onbatch.Email}}</td>
                     <td>{{onbatch.Phone_Number}}</td>
                 </tr>
@@ -108,7 +108,7 @@
                 {% for editor in EditorTeam_info %}
                 <tr>
                     <td scope="col">{{ forloop.counter }}</td>
-                    <td>{{editor.Full_Name}}</td>
+                    <td><a href="{% url 'editor' editor.id %}">{{editor.Full_Name}}</a></td>
                     <td>{{editor.Email}}</td>
                     <td>{{editor.Phone_Number}}</td>
                 </tr>
