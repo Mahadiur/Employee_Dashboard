@@ -3,8 +3,8 @@ from .models import FrontEndTeam
 
 # Create your views here.
 
-def frontenddev(request, primarykey):
-    Front_Details = get_object_or_404(FrontEndTeam, primarykey=primarykey)
+def frontenddev(request, pk):
+    Front_Details = get_object_or_404(FrontEndTeam, pk=pk)
     context = {
         'frontend_info': Front_Details
     }
